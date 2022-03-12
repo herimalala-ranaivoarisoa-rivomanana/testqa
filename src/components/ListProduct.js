@@ -21,28 +21,18 @@ function ListProduct() {
     dispatch(listSelects(toDeleteList));
   }, [toDeleteList]);
   return (
-/*     <header>
-      <h1>Product list</h1>
-      <div>
-        <Link to='/add'>
-          <button id='add-product-btn'>ADD</button>
-        </Link>
-        <button id='delete-product-btn'>MASS DELETE</button>
-      </div>
-    </header> */
     <Layout  title='Product list' page='list'>
         <div className='products'>
-      {/*   {products.map((product) => {
+        {products.map((product) => {
           return (
-            <div key={product.sku}>
              <Product
+             key={product.sku}
                 product={product}
                 toDeleteList={toDeleteList}
                 setToDeleteList={setToDeleteList}
               />  
-            </div>
           );
-        })} */}
+        })} 
       </div> 
     </Layout>
   );
