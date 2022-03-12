@@ -31,19 +31,19 @@ function ListProduct() {
       </div>
     </header> */
     <Layout  title='Product list' page='list'>
-{/*         <div className='products'>
+        <div className='products'>
         {products.map((product) => {
           return (
             <div key={product.sku}>
-             <Product
+            {/*  <Product
                 product={product}
                 toDeleteList={toDeleteList}
                 setToDeleteList={setToDeleteList}
-              /> 
+              />  */}
             </div>
           );
         })}
-      </div> */}
+      </div> 
     </Layout>
   );
 }
