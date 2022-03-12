@@ -35,11 +35,11 @@ function ListProduct() {
         {products.map((product) => {
           return (
             <div key={product.sku}>
-              <Product
+   {/*            <Product
                 product={product}
                 toDeleteList={toDeleteList}
                 setToDeleteList={setToDeleteList}
-              />
+              /> */}
             </div>
           );
         })}
