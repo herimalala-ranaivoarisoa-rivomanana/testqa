@@ -1,13 +1,17 @@
-import logo from "./logo.svg";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 import "./App.css";
+import ListProduct from "./components/ListProduct";
+import AddProduct from "./components/AddProduct";
 
 function App() {
   return (
     <div className='App'>
-      <div>
-        <button id='add-product-btn'>ADD</button>
-        <button id='delete-product-btn'>MASS DELETE</button>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<ListProduct />} />
+          <Route path="/addproduct" element={<AddProduct />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
